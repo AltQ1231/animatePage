@@ -1,0 +1,207 @@
+.safety-notice-page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .safety-top-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+  }
+
+  .safety-layout-herder {
+    flex: 0 0 80px;
+    height: 80px;
+    align-items: center;
+    padding: 0 20px;
+    color: #ffffff;
+    background: url('../../../public/head-bg.png') top center no-repeat;
+    background-size: cover;
+
+    .left-time-container,
+    .right-logo-container {
+      flex: 0 0 200px;
+      width: 200px;
+      font-size: 20px;
+    }
+
+    .center-title-container {
+      text-align: center;
+      justify-content: center;
+      font-size: 26px;
+
+      .center-title {
+        padding: 10px 0;
+        position: relative;
+        font-size: 28px;
+        color: #FFFFFF;
+        font-weight: bold;
+        height: 57px;
+        line-height: 37px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          right: 0;
+          height: 2px;
+          width: 200%;
+          border-radius: 100%;
+          transform: translateX(-50%);
+
+          background: linear-gradient(to right,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(1, 236, 213, 0.2) 10%,
+              rgba(1, 236, 213, 0.4) 20%,
+              rgba(1, 236, 213, 0.6) 30%,
+              rgba(1, 236, 213, 0.8) 40%,
+              rgba(1, 236, 213, 0.9) 50%,
+              rgba(1, 236, 213, 0.8) 60%,
+              rgba(1, 236, 213, 0.6) 70%,
+              rgba(1, 236, 213, 0.4) 80%,
+              rgba(1, 236, 213, 0.2) 90%,
+              rgba(0, 0, 0, 0) 100%)
+        }
+      }
+    }
+
+
+    .left-time-container {
+      align-items: flex-start;
+      justify-content: center;
+      position: relative;
+      padding-left: 10px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 2px;
+        border-radius: 1px;
+        background-color: #01ecd5;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 16px;
+        height: 16px;
+        font-weight: bold;
+
+        &+p {
+          margin-top: 2px;
+        }
+      }
+    }
+
+    .right-logo-container {
+      align-items: center;
+      justify-content: flex-end;
+
+      .go-chart-icon {
+        font-size: 24px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      .logo-icon {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .video-style {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .notice-modal-contianer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .notice-page-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .legend-container {
+    position: absolute;
+    left: 110px;
+    bottom: 120px;
+
+    .legend-col {
+      height: 22px;
+
+      &:nth-child(n + 2) {
+        margin-top: 40px;
+      }
+
+      .legend-row {
+        flex: 0 0 170px;
+        width: 170px;
+        height: 24px;
+        align-items: center;
+
+        .left-img-container {
+          flex: 0 0 40px;
+          width: 40px;
+          align-items: center;
+          justify-content: center;
+
+          .route-img {
+            width: 36px;
+            height: 16px;
+          }
+
+          .warning-img {
+            width: 26px;
+            height: 22px;
+          }
+
+          .no-burning-img {
+            width: 24px;
+            height: 24px;
+          }
+
+          .forbidden-img {
+            width: 24px;
+            height: 24px;
+          }
+
+          .medical-img {
+            width: 20px;
+            height: 20px;
+          }
+
+          .phone-img {
+            width: 30px;
+            height: 24px;
+          }
+
+          .exit-img,
+          .assembly-img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        .right-text {
+          padding-left: 10px;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}

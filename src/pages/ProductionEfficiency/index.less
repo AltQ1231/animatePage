@@ -1,0 +1,178 @@
+.production-efficiency-page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 10px;
+
+  .total-chart-container {
+    padding-left: 20px;
+    overflow: hidden;
+
+    .slick-slide {
+      &:nth-child(odd) {
+        padding-right: 5px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .carousel-title-container {
+    overflow: hidden;
+
+    .common-title {
+      flex: 0 0 40px;
+      height: 40px;
+      line-height: 40px;
+      align-items: center;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.90);
+      padding-left: 26px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        background: url(../../../public/machinematerials.svg) top center no-repeat;
+        background-size: 100% 100%;
+      }
+
+      &.part-title::before {
+        background: url(../../../public/componentmaterial.svg) top center no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+
+    .bottom-carousel-container {
+
+      .no-data-container {
+        background-color: rgba(179, 191, 255, 0.12);
+      }
+    }
+  }
+
+  .common-bottom-select {
+    flex: 0 0 50px;
+    height: 50px;
+    margin-top: 10px;
+    align-items: center;
+
+    .left-select {
+      flex: 0 0 400px;
+      width: 400px;
+      height: 50px;
+    }
+
+    .left-select+.show-data-contianer {
+      margin-left: 40px;
+    }
+
+    .common-select-container {
+      height: 50px;
+      align-items: center;
+      font-size: 16px;
+      color: #ffffff;
+      padding-left: 10px;
+      padding-right: 20px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      background-color: rgba(179, 191, 255, 0.12);
+      transition: border-color 0.3s;
+
+      .select-val {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &.ant-dropdown-open {
+        border-color: #01ECD5;
+      }
+    }
+
+    .select-icon {
+      flex: 0 0 20px;
+      width: 20px;
+      font-size: 20px;
+      margin-left: 5px;
+      color: rgba(255, 255, 255, 0.50);
+    }
+
+    .show-data-contianer {
+      cursor: pointer;
+      align-items: center;
+
+      .show-text {
+        font-size: 16px;
+        color: #FFFFFF;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .part-chart-container {
+    flex: 0 0 655px;
+    width: 655px;
+    padding: 0 20px;
+  }
+
+  .custom-carousel-content {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-content-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 10px;
+
+    .part-title {
+      flex: 0 0 45px;
+      line-height: 45px;
+      height: 45px;
+      font-size: 18px;
+      color: #4586FF;
+      font-weight: bold;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    }
+
+    .chart-title-container {
+      flex: 0 0 24px;
+      height: 24px;
+      margin-top: 10px;
+      align-items: center;
+      padding: 0 15px;
+
+      .chart-title {
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        border-radius: 2px;
+        display: inline-block;
+        padding: 0 7px;
+        line-height: 22px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.60);
+        font-weight: bold;
+      }
+    }
+
+    .bottom-chart {
+      overflow: hidden;
+      padding-top: 4px;
+
+      .common-chart {
+        overflow: hidden;
+        margin-top: 5px;
+      }
+    }
+  }
+}
