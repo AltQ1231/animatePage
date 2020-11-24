@@ -5,9 +5,8 @@ class HomePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectId: null,
-      dotArrs: [],
-      looptime: 18,
+      dotArrs: [], //  发光点数
+      looptime: 18, //  转一圈的时间
     };
   }
 

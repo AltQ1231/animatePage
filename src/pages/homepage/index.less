@@ -1,10 +1,12 @@
+@viewH: 910px; //高度为banner显示的高度
+
 .main-page-container {
   width: 100%;
   min-width: 1100px;
 
   .top-banner-container {
-    flex: 0 0 600px;
-    height: 600px;
+    flex: 0 0 @viewH;
+    height: @viewH;
     width: 100%;
     color: #ffffff;
     background-color: #04050b;
@@ -22,15 +24,15 @@
     }
 
     .center-banner-container {
-      width: 1200px;
-      height: 600px;
+      width: 1920px;
+      height: 1080px;
       overflow: hidden;
       margin: 0 auto;
       position: relative;
 
       .bg-img {
-        width: 1200px;
-        height: 600px;
+        width: 1920px;
+        height: 1080px;
         position: absolute;
         top: 0;
         left: 0;
@@ -40,11 +42,11 @@
       }
 
       .loop-circle-container {
-        width: 1200px;
-        height: 600px;
+        width: 1920px;
+        height: 1080px;
         position: relative;
         z-index: 20;
-        transform: translate(17%, -0%) rotateX(45deg);
+        transform: translate(17%, -2%) rotateX(45deg);
         filter: brightness(120%);
 
         .circle {
