@@ -8,6 +8,18 @@
     width: 100%;
     color: #ffffff;
     background-color: #04050b;
+    position: relative;
+    overflow: hidden;
+
+    .bg-img-background {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      width: 100%;
+      filter: blur(10px);
+      margin: -30px;
+    }
 
     .center-banner-container {
       width: 1200px;
@@ -20,24 +32,28 @@
         width: 1200px;
         height: 600px;
         position: absolute;
-        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
       }
 
       .loop-circle-container {
         width: 1200px;
         height: 600px;
         position: relative;
-        z-index: 2;
+        z-index: 20;
         transform: translateX(18%);
 
         .circle {
-          width: 8px;
-          height: 8px;
+          width: 7px;
+          height: 7px;
           border-radius: 50%;
           position: absolute;
           background: #ffffff;
-          border: 1px solid #acc7ff;
-          border: 0 solid #d0fcff;
+          border: 1px solid #d0fcff;
+          //   border: 0 solid #d0fcff;
           box-shadow: 0 0 8px 0 #9dfeff, 0 0 12px 0 #cffeff;
         }
 
