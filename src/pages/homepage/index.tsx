@@ -13,7 +13,7 @@ class HomePage extends Component {
 
   componentDidMount() {
     let arr = [];
-    for (var i = 1; i < 121; i++) {
+    for (var i = 1; i < 101; i++) {
       arr.push(i);
     }
     this.setState({
@@ -97,7 +97,7 @@ class HomePage extends Component {
                         looptime,
                       )}s infinite alternate`,
                       marginTop: `${this.generateRandom(index)}px`,
-                      marginLeft: `-${this.generateRandom(index)}px`,
+                      marginLeft: `${this.generateRandom(index)}px`,
                     }}
                   ></div>
                 );

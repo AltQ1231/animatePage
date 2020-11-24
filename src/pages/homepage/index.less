@@ -28,14 +28,17 @@
         height: 600px;
         position: relative;
         z-index: 2;
-        transform: translateX(20%);
+        transform: translateX(18%);
 
         .circle {
           width: 8px;
           height: 8px;
-          background: #ffffff;
           border-radius: 50%;
           position: absolute;
+          background: #ffffff;
+          border: 1px solid #acc7ff;
+          border: 0 solid #d0fcff;
+          box-shadow: 0 0 8px 0 #9dfeff, 0 0 12px 0 #cffeff;
         }
 
         .circle1 {
@@ -90,8 +93,8 @@
 
         @keyframes scale {
           0% {
-            transform: scale(0.5);
-            opacity: 0.5;
+            transform: scale(0.6);
+            opacity: 0.7;
           }
 
           50% {
@@ -100,8 +103,8 @@
           }
 
           100% {
-            transform: scale(0.5);
-            opacity: 0.5;
+            transform: scale(0.6);
+            opacity: 0.7;
           }
         }
       }
