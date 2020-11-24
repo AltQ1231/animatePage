@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="1080px" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>redesign-1</title>
+    <defs>
+        <filter x="-7.0%" y="-53.4%" width="114.0%" height="206.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-18.5%" y="-36.5%" width="137.1%" height="173.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="redesign-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#02040F" x="0" y="0" width="1920" height="1080"></rect>
+        <ellipse id="顶部光源1" fill="#006CFF" opacity="0.298921131" filter="url(#filter-1)" cx="953.5" cy="-94.5" rx="1073.5" ry="140.5"></ellipse>
+        <ellipse id="顶部光源2" fill="#2700FF" opacity="0.65" filter="url(#filter-2)" cx="959.5" cy="-203.5" rx="404.5" ry="205.5"></ellipse>
+    </g>
+</svg>
