@@ -7,7 +7,7 @@ class HomePage extends Component {
     this.state = {
       selectId: null,
       dotArrs: [],
-      looptime: 20,
+      looptime: 18,
     };
   }
 
@@ -66,10 +66,12 @@ class HomePage extends Component {
   }
 
   generateSizeRandom() {
-    const temp = Math.floor(Math.random() * 10);
+    const temp = Math.floor(Math.random() * 12);
     let num = 5;
 
-    if (temp >= 5) {
+    if (temp <= 4) {
+      num = 6;
+    } else if (4 < temp <= 8) {
       num = 5;
     } else {
       num = 4;
