@@ -72,6 +72,10 @@ class HomePage extends Component {
       <div className="main-page-container flex-col">
         <div className="top-banner-container">
           <div className="center-banner-container flex-row">
+            <img
+              className="bg-img"
+              src={require('../../../public/bg.png')}
+            ></img>
             <div className="loop-circle-container">
               {dotArrs.map((item, index) => {
                 return (
