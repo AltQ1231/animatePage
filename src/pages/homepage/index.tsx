@@ -7,13 +7,13 @@ class HomePage extends Component {
     this.state = {
       selectId: null,
       dotArrs: [],
-      looptime: 60,
+      looptime: 20,
     };
   }
 
   componentDidMount() {
     let arr = [];
-    for (var i = 1; i < 81; i++) {
+    for (var i = 1; i < 71; i++) {
       arr.push(i);
     }
     this.setState({
@@ -53,13 +53,26 @@ class HomePage extends Component {
   }
 
   generateRandom(index) {
-    const temp = Math.floor(Math.random() * 16);
+    const temp = Math.floor(Math.random() * 10);
     let num = 0;
 
-    if (temp >= 8) {
+    if (temp >= 5) {
       num = temp;
     } else {
       num = -temp;
+    }
+
+    return num;
+  }
+
+  generateSizeRandom() {
+    const temp = Math.floor(Math.random() * 10);
+    let num = 5;
+
+    if (temp >= 5) {
+      num = 5;
+    } else {
+      num = 4;
     }
 
     return num;
@@ -82,6 +95,7 @@ class HomePage extends Component {
             ></img>
             <div className="loop-circle-container">
               {dotArrs.map((item, index) => {
+                const size = this.generateSizeRandom();
                 return (
                   <div
                     key={item}
@@ -102,6 +116,8 @@ class HomePage extends Component {
                       )}s infinite alternate`,
                       marginTop: `${this.generateRandom(index)}px`,
                       marginLeft: `${this.generateRandom(index)}px`,
+                      width: `${size}px`,
+                      height: `${size}px`,
                     }}
                   ></div>
                 );

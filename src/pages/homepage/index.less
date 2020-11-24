@@ -44,17 +44,18 @@
         height: 600px;
         position: relative;
         z-index: 20;
-        transform: translateX(18%);
+        transform: translate(17%, -0%) rotateX(45deg);
+        filter: brightness(120%);
 
         .circle {
-          width: 7px;
-          height: 7px;
+          width: 6px;
+          height: 6px;
           border-radius: 50%;
           position: absolute;
           background: #ffffff;
-          border: 1px solid #d0fcff;
-          //   border: 0 solid #d0fcff;
-          box-shadow: 0 0 8px 0 #9dfeff, 0 0 12px 0 #cffeff;
+          border: 1px solid #acc7ff;
+          border: 0.5px solid #d0fcff;
+          box-shadow: 0 0 30px 1.5px #9dfeff, 0 0 40px 2px #cffeff;
         }
 
         .circle1 {
@@ -114,7 +115,7 @@
           }
 
           50% {
-            transform: scale(0.8);
+            transform: scale(0.9);
             opacity: 1;
           }
 
