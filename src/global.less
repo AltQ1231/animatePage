@@ -1,8 +1,8 @@
 @import '~antd/lib/style/themes/default.less';
 @import '~antd/dist/antd.less'; // 引入官方提供的 less 样式入口文件
-@import "./theme/init.less";
-@import "./theme/theme.less";
-@import "../public/iconfont/iconfont.css";
+@import './theme/init.less';
+@import './theme/theme.less';
+@import '../public/iconfont/iconfont.css';
 
 html,
 body,
@@ -19,7 +19,6 @@ body,
   user-select: none;
 }
 
-
 .nothing-page {
   display: flex;
   align-items: center;
@@ -30,7 +29,9 @@ body,
 
   .run-img {
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 16px -8px, rgba(0, 0, 0, 0.05) 0px 9px 28px 0px, rgba(0, 0, 0, 0.03) 0px 12px 48px 16px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 16px -8px,
+      rgba(0, 0, 0, 0.05) 0px 9px 28px 0px,
+      rgba(0, 0, 0, 0.03) 0px 12px 48px 16px;
   }
 
   .right-info {
@@ -67,10 +68,14 @@ body,
 
   .ant-radio-button-wrapper {
     background: transparent;
-    background-image: linear-gradient(180deg, rgba(2, 247, 236, 0) 0%, rgba(1, 236, 213, 0.30) 100%);
+    background-image: linear-gradient(
+      180deg,
+      rgba(2, 247, 236, 0) 0%,
+      rgba(1, 236, 213, 0.3) 100%
+    );
     border: none;
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.60);
+    color: rgba(255, 255, 255, 0.6);
     width: 140px;
     height: 50px;
     line-height: 50px;
@@ -105,13 +110,19 @@ body,
     border-radius: 0;
   }
 
-  .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  .ant-radio-group-solid
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
     border-radius: 0;
   }
 
-  .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  .ant-radio-group-solid
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
     background: transparent;
-    background-image: linear-gradient(180deg, rgba(2, 247, 236, 0) 0%, rgba(1, 236, 213, 0.45) 100%);
+    background-image: linear-gradient(
+      180deg,
+      rgba(2, 247, 236, 0) 0%,
+      rgba(1, 236, 213, 0.45) 100%
+    );
 
     &::after {
       opacity: 1;
@@ -140,7 +151,7 @@ body,
   }
 
   .slick-slide {
-    >div {
+    > div {
       height: 100%;
     }
   }
@@ -171,15 +182,14 @@ body,
   .slick-dots-top {
     top: -22px;
   }
-
 }
 
 /*--------------------------------ant-dropdown-menu-------------------------------------*/
 .ant-dropdown-menu {
   padding: 0;
-  background: #2E334D;
+  background: #2e334d;
   border: 1px solid rgba(220, 227, 229, 0.21);
-  box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.50);
+  box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.5);
   border-radius: 4px;
 }
 
@@ -194,19 +204,19 @@ body,
 
 .ant-dropdown-menu-item-selected,
 .ant-dropdown-menu-submenu-title-selected,
-.ant-dropdown-menu-item-selected>a,
-.ant-dropdown-menu-submenu-title-selected>a {
-  background-color: rgba(255, 255, 255, 0.10);
+.ant-dropdown-menu-item-selected > a,
+.ant-dropdown-menu-submenu-title-selected > a {
+  background-color: rgba(255, 255, 255, 0.1);
   font-weight: bold;
 }
 
 .ant-dropdown-menu-item:hover,
 .ant-dropdown-menu-submenu-title:hover {
-  background-color: rgba(255, 255, 255, 0.10);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .ant-dropdown-open {
-  border-color: #01ECD5;
+  border-color: #01ecd5;
 }
 
 /*--------------------------------ant-anchor-wrapper-------------------------------------*/
@@ -233,12 +243,11 @@ body,
   overflow: initial;
 }
 
-
 /*--------------------------------ant-modal-content-------------------------------------*/
 .ant-modal-content {
-  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.50);
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
   border-radius: 4px;
-  background-color: #1F2233;
+  background-color: #1f2233;
 }
 
 .ant-modal-close {
@@ -251,18 +260,17 @@ body,
   padding: 15px 20px;
   border-radius: 4px 4px 0 0;
   border-color: rgba(255, 255, 255, 0.1);
-  background: #1F2233;
+  background: #1f2233;
 }
 
 .ant-modal-title {
   text-align: center;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 30px;
 }
 
-
-.ant-spin-nested-loading>div>.ant-spin {
+.ant-spin-nested-loading > div > .ant-spin {
   max-height: initial;
 }
 
@@ -276,9 +284,9 @@ body,
 .ant-switch {
   height: 20px;
   line-height: 18px;
-  background-color: #4D5366;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.60);
+  background-color: #4d5366;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
 
 .ant-switch-handle {
@@ -288,9 +296,9 @@ body,
 }
 
 .ant-switch-handle::before {
-  background-color: #DAE0F2;
+  background-color: #dae0f2;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   border-radius: 8px;
 }
 
@@ -298,7 +306,7 @@ body,
   left: calc(100% - 18px);
 
   &::before {
-    background-color: #3CCB5C;
+    background-color: #3ccb5c;
   }
 }
 
@@ -306,7 +314,6 @@ body,
   background-color: rgba(23, 195, 60, 0.35);
   border-color: rgba(255, 255, 255, 0.15);
 }
-
 
 /*--------------------------------   ant-progress   -------------------------------------*/
 
@@ -321,18 +328,18 @@ body,
   color: rgba(255, 255, 255, 0.9);
 }
 
-.ant-table-thead>tr>th {
-  background: rgba(47, 147, 255, 0.10);
+.ant-table-thead > tr > th {
+  background: rgba(47, 147, 255, 0.1);
   font-weight: bold;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   border-bottom: none;
 }
 
-.ant-table-thead>tr>th,
-.ant-table-tbody>tr>td,
-.ant-table tfoot>tr>th,
-.ant-table tfoot>tr>td {
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td,
+.ant-table tfoot > tr > th,
+.ant-table tfoot > tr > td {
   padding: 0 0 0 10px;
   height: 40px;
   line-height: 40px;
@@ -342,16 +349,16 @@ body,
   }
 }
 
-.ant-table-tbody>tr>td {
+.ant-table-tbody > tr > td {
   border-bottom: none;
   cursor: pointer;
 }
 
-.ant-table-tbody>tr.ant-table-row:hover>td {
+.ant-table-tbody > tr.ant-table-row:hover > td {
   background: rgba(255, 255, 255, 0.03);
 }
 
-.ant-table-tbody>tr.ant-table-row {
+.ant-table-tbody > tr.ant-table-row {
   &:nth-child(even) {
     background: rgba(255, 255, 255, 0.05);
   }
@@ -361,10 +368,9 @@ body,
   }
 }
 
-
 .ant-notification-hook-holder,
 .ant-notification-notice {
-  background: #2E334D;
+  background: #2e334d;
   border: 1px solid rgba(220, 227, 229, 0.21);
 }
 
@@ -380,3 +386,75 @@ body,
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
 }
+
+// loop
+// @a : 500px; // 椭圆x轴半径(长半径)
+// @b : 250px; // 椭圆y轴半径(短半径)
+// @s : 60; // 坐标点的数目(数目越大，动画越精细)
+
+// .ellips-container {
+//   position: absolute;
+//   left: 45%;
+//   top: 50px;
+//   width: 100%;
+//   height: 100%;
+
+//   &:nth-child(n+2) {
+//     margin-top: 5px;
+//     margin-left: 10px;
+
+//     .dot {
+//       width: 4px;
+//       height: 4px;
+//       left: @a - 10px;
+//       top: @b - 10px;
+//       background: #ffffff;
+//       border-radius: 100%;
+//       position: absolute;
+//       animation: move 20s linear infinite;
+//     }
+//   }
+// }
+
+// .ellips {
+//   width: @a*2 ;
+//   height: @b*2;
+//   border-radius: 100%;
+//   // border: 1px solid #333;
+//   position: relative;
+//   // transform: translate(45%, 50px);
+//   // margin: 30px 0 0 20px;
+// }
+
+// .ellips1 {
+//   width: @a*2 ;
+//   height: @b*2;
+//   border-radius: 100%;
+//   // border: 1px solid #333;
+//   position: relative;
+//   transform: translate(45%, 52px);
+// }
+
+// .dot {
+//   width: 6px;
+//   height: 6px;
+//   left: @a - 10px;
+//   top: @b - 10px;
+//   background: #ffffff;
+//   border-radius: 100%;
+//   position: absolute;
+//   animation: move 20s linear infinite;
+// }
+
+// .loop(@index) when (@index < @s+1) {
+//   .loop((@index + 1));
+//   @keyframeSel: @index * 100%/@s;
+
+//   @{keyframeSel} {
+//     transform: translate(@a*cos(360deg/@s*@index), @b*sin(360deg/@s*@index));
+//   }
+// }
+
+// @keyframes move {
+//   .loop(0);
+// }
